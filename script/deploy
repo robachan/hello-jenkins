@@ -6,7 +6,7 @@
 
 # Centos
 # Jenkins Hook: http://162.243.135.191:8080/github-webhook/
-ssh app@104.131.110.156 <<EOF
+ssh -t -t app@104.131.110.156 <<EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
