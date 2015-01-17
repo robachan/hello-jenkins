@@ -1,6 +1,12 @@
 #!/bin/sh
  
-ssh app@104.236.190.197 <<EOF
+# Ubuntu
+# Jenkins Hook: http://107.170.240.240:8080/github-webhook/
+# ssh app@104.236.190.197 <<EOF
+
+# Centos
+# Jenkins Hook: http://162.243.135.191:8080/github-webhook/
+ssh app@104.131.110.156 <<EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
